@@ -80,11 +80,13 @@
     function leftOut() {
         var first = document.querySelector('ul li:first-child');
         first.parentNode.removeChild(first);
+        alert("删除数字：" + first.innerText);
     }
 
     function rightOut() {
         var last = document.querySelector('ul li:last-child');
         last.parentNode.removeChild(last);
+        alert("删除数字：" + last.innerText);
     }
 
     function bindEvents() {
